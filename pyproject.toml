@@ -1,0 +1,14 @@
+[project]
+name = "tiny-ppo"
+version = "0.1.0"
+description = "PPO from scratch in PyTorch, one file, discrete actions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["torch", "gymnasium>=1.0", "numpy", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
